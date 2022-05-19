@@ -1,0 +1,228 @@
+body {
+  margin: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.sidebar {
+  width: 45em;
+  border: 1px solid black;
+}
+
+.list-title{
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin:1em;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  height: 3rem;
+  width: 5rem;
+}
+
+.search {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#search {
+  width: 35%;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#label {
+  margin-right: 1rem;
+}
+
+iframe {
+  margin-bottom: 1rem;
+}
+
+.logo-container{
+  display:flex;
+}
+
+#logo {
+  height: 7rem;
+  width: 7.5rem;
+  display: block;
+  margin: auto;
+  padding-left: 14em;
+}
+
+.logout{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-btn{
+  height:3rem;
+  width:5rem;
+  margin-left: 2em;
+}
+
+.anchor-tab {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor-tab button {
+  height: 2rem;
+  /* border: none; */
+  font-size: 1.2rem;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+li{
+ list-style-type: none; 
+}
+
+.videoname-button {
+  border: none;
+  background-color: white;
+  text-transform: capitalize;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.heart {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.favorite-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fullHeart {
+  color: red;
+}
+
+.video-item{
+  display: flex;
+  margin: 1em;
+
+}
+
+.video-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.login-signup-container{
+  margin:auto;
+  margin-top: 6em;
+  width:40vw;
+  height:60vh;
+  border: 0.2em;
+  border-style:solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-signup-container p{
+  margin-top: 1em;
+
+} 
+
+.login-signup-container button{
+  width:12em;
+  height:3em;
+  margin-left: 6em;
+  margin-top: 2em;
+}
+
+.login-signup h1{
+text-align: center;
+}
+
+.inputfields{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputfields input{
+  height: 3em;
+  width:20em;
+  margin: 1em;
+}
+
+#clickme{
+  margin-left: 0em;
+  margin-top: 0em;
+  font-size: 1em;
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+}
+
+#login-from-signup{
+  font-size: 1em;
+  margin-top: 0;
+  margin-left: 0;
+  width: 3em;
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.fixed{
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  bottom: 8em;
+  right: 4em;
+}
+
+.arrow-up{
+  height:3em;
+  width:3em;
+}
+
+.load-more{
+  width: 100%;
+  height:4em;
+}
+
+.end-of-list{
+text-align: center;
+}
