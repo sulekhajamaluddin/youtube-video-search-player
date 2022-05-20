@@ -34,7 +34,7 @@ The page will reload if you make edits.
 Inside the root of the project, type the following:
 
 ```
-npm test
+npm run test
 ```
 
 Launches the test runner in the interactive watch mode.
