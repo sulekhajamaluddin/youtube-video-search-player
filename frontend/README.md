@@ -27,7 +27,7 @@ PS: Make sure you don't have any active ports. In most Unix-based operating syst
 Runs the app in the development mode.
 Open [http://localhost:3010](http://localhost:3010) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 
 ## Test React App
 
