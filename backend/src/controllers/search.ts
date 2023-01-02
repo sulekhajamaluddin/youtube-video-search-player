@@ -1,8 +1,8 @@
-import { Request, Response } from 'express';
-import asyncWrapper from '../middleware/async';
-import { Video } from '../models/video';
-import fetch from 'node-fetch';
-import dotenv from 'dotenv';
+import { Request, Response } from "express";
+import asyncWrapper from "../middleware/async";
+import { Video } from "../models/video";
+import fetch from "node-fetch";
+import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -32,7 +32,7 @@ interface responseVideo {
 // Function to insert search videos into DB, if not already present in the DB
 
 const insertIntoDB = async (item: resultItems) => {
-  const dbVideos = await Video.query().where('name', item.snippet.title);
+  const dbVideos = await Video.query().where("name", item.snippet.title);
   if (dbVideos.length === 0) {
     await Video.query().insert({
       etag: item.etag,
@@ -49,7 +49,7 @@ const insertIntoDB = async (item: resultItems) => {
 const searchVideo = asyncWrapper(
   async (req: Request, res: Response): Promise<Response> => {
     const { searchWord } = req.body;
-    const videos = await Video.query().whereRaw('name ~* ?', [searchWord]);
+    const videos = await Video.query().whereRaw("name ~* ?", [searchWord]);
     if (videos.length > 0) {
       return res.json(
         videos.map((item) => ({
@@ -60,10 +60,10 @@ const searchVideo = asyncWrapper(
       );
     } else {
       const response = await fetch(
-        `${process.env.API_URL}&key=${process.env.API_KEY}&q=${searchWord}&maxResults=1`,
+        `${process.env.API_URL}&key=${process.env.API_KEY}&q=${searchWord}&maxResults=5`,
         {
           headers: {
-            'User-Agent': 'YOUTUBE API',
+            "User-Agent": "YOUTUBE API",
           },
         }
       );
