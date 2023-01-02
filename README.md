@@ -2,13 +2,14 @@
 
 ## Get the Project
 
-Step 1: Git clone or download the repository into the your local system.
+Git clone or download the repository into the your local system.
 
 After cloning this repository for the first time, go to the root of the project.
 
 You will need two terminals open and working, one for the frontend and one for the backend.
 
 In terminal 1: enter into the backend using ### `cd backend`.
+
 In terminal 2: enter into the frontend using ### `cd frontend`.
 
 ## Install dependencies
@@ -22,7 +23,7 @@ npm install
 
 ## Set Up Database
 
-This project uses PostgreSQL in the backend with Knex and Objections to make database management and querying effienct.
+This project uses PostgreSQL in the backend with Knex and Objections to make database management and querying efficient.
 You have to install PostgreSQL in your local system to make the project work.
 After installing PostgreSQL, in the terminal use the command : `psql -U name_of_databaseuser` or `psql -U postgres` to enter into psql mode. The part after `-U` is the username for the database.
 
@@ -37,7 +38,7 @@ You can view the tables in the database using the command `\dt`
 ## Create .env file
 
 You need to create a `.env` file for both the frontend and backend folders.
-Use the command ### `touch .env` in backend terminal and frontend terminal. This will create a ### `.env` file in both the frontend and backend folders.
+Use the command `touch .env` in backend terminal and frontend terminal. This will create a `.env` file in both the frontend and backend folders.
 
 Use this screenshot for reference:
 
